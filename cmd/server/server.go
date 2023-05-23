@@ -1,12 +1,12 @@
 package main
 
 import (
-	"go-ads-server/internal/ads"
+	"go-ads-server/internal/server"
 	"log"
 )
 
 func main() {
-	s := ads.NewServer()
+	s := server.NewServer()
 
 	if err := s.Listen(); err != nil {
 		log.Fatal(err)
